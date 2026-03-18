@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "3000:80" # Cambia esto según el puerto de tu app
+      - "8085:80" # Cambia esto según el puerto de tu app
     environment:
       - NODE_ENV=production
     restart: always
