@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILO | Infraestructura de Libertad</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#09090b] text-zinc-300 relative overflow-x-hidden selection:bg-indigo-500/30 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-bolt text-black text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">FILO</span>
+                </a>
+                <div class="hidden md:flex space-x-10 items-center text-sm font-medium">
+                    <a href="soluciones.html" class="text-zinc-400 hover:text-white transition">Soluciones</a>
+                    <a href="resultados.html" class="text-zinc-400 hover:text-white transition">Resultados</a>
+                    <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+                    <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+                    <a href="inversion.html" class="text-zinc-400 hover:text-white transition">Precios</a>
+                    <a href="contacto.html"
+                        class="bg-white text-black px-5 py-2.5 rounded-lg hover:bg-zinc-200 transition font-semibold">
+                        Agendar Diagnóstico
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#09090b] border-t border-zinc-800 p-4 absolute w-full">
+            <a href="soluciones.html" class="block py-3 text-zinc-400 hover:text-white">Soluciones</a>
+            <a href="resultados.html" class="block py-3 text-zinc-400 hover:text-white">Resultados</a>
+            <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+            <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+            <a href="inversion.html" class="block py-3 text-zinc-400 hover:text-white">Precios</a>
+            <a href="contacto.html" class="block mt-4 text-center bg-white text-black py-3 rounded-lg font-bold">Agendar
+                Diagnóstico</a>
+        </div>
+    </nav>
+
+    <!-- Táchira Content -->
+    <section class="py-24 bg-white text-zinc-900 border-t border-zinc-200">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <span class="text-indigo-600 font-bold tracking-widest text-sm uppercase mb-3 block">El Corazón de Sofía</span>
+                <h1 class="text-5xl md:text-6xl font-bold text-zinc-900 mb-6 tracking-tight">El Espíritu Gocho</h1>
+                <p class="text-xl text-zinc-600 leading-relaxed max-w-3xl mx-auto">
+                    La esencia de nuestra Inteligencia Artificial nace de los valores de la gente del Táchira: calidez, amabilidad y profunda vocación de servicio.
+                </p>
+            </div>
+
+            <!-- Valores y Mapa -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-24 items-center">
+                <div>
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 mb-6">
+                        <i class="fa-solid fa-hand-holding-heart text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6 text-zinc-900">El valor de nuestra gente</h2>
+                    <p class="text-lg text-zinc-600 leading-relaxed mb-6">
+                        Al tachirense o "gocho" se le conoce en toda Venezuela por ser profundamente <strong>hospitalario, respetuoso y muy trabajador</strong>. Esa cultura de tratar al visitante como a la familia es exactamente la forma de interactuar que Sofía replica.
+                    </p>
+                    <p class="text-lg text-zinc-600 leading-relaxed">
+                        No buscamos cierres de ventas fríos ni automatizaciones robóticas; buscamos conversaciones honestas donde el cliente se sienta escuchado, valorado y bien atendido, con aquel inconfundible <span class="text-indigo-600 italic font-semibold">"a la orden"</span> que caracteriza a nuestra región.
+                    </p>
+                </div>
+                <!-- Mapa -->
+                <div class="relative bg-zinc-50 p-3 rounded-[2rem] shadow-2xl border border-zinc-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126435.32168533816!2d-72.2969018047926!3d7.770933703622409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666c823071bb2f%3A0xe5f9226ba51c6c64!2sSan%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses!2s!4v1700000000000!5m2!1ses!2s" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 1.5rem;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Historia -->
+            <div class="bg-zinc-50 border border-zinc-200 rounded-[2.5rem] p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+                <div class="relative z-10">
+                    <span class="text-indigo-600 font-bold tracking-widest text-xs uppercase mb-3 block">Nuestra Raíz</span>
+                    <h3 class="text-3xl font-bold mb-8 text-zinc-900">San Cristóbal: La Ciudad de la Cordialidad</h3>
+                    <div class="prose max-w-none text-zinc-600 text-lg leading-relaxed space-y-6">
+                        <p>
+                            Fundada el 31 de marzo de 1561 por el capitán Juan de Maldonado, San Cristóbal es la pujante capital del estado Táchira y la puerta principal hacia los majestuosos Andes venezolanos. Asentada en un valle montañoso y custodiada por cumbres verdes, su clima fresco y su geografía moldean también el carácter apacible y noble de su gente.
+                        </p>
+                        <p>
+                            Históricamente, el estado Táchira fue una región cafetalera próspera, una tierra de pioneros y un bastión cultural que siempre supo combinar el respeto por las tradiciones andinas con un profundo deseo de progreso y modernidad. Gracias a la impecable educación de sus habitantes, a San Cristóbal se le bautizó con todo derecho como <strong>"La Ciudad de la Cordialidad"</strong>.
+                        </p>
+                        <p class="font-medium text-zinc-900 text-xl border-l-4 border-indigo-500 pl-6 mt-10 italic">
+                            Desde este rincón del mundo, e inspirado en la nobleza y la resiliencia invaluable de su gente, nace la forma de ser de Sofía. Más que un software, es nuestro tributo a la conexión humana y al buen servicio en la era digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contacto" class="py-24 bg-[#09090b] text-center px-6 relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">¿Listo para soltar el control operativo?</h2>
+
+            <a href="contacto.html"
+                class="inline-block bg-white text-black px-10 py-4 rounded-xl font-bold text-lg hover:bg-zinc-200 transition mb-12">
+                Agendar Diagnóstico de 30 Minutos
+            </a>
+
+            <div class="flex justify-center gap-8 text-zinc-600 text-xs">
+                <a href="privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="terminos.html" class="hover:text-white transition">Términos de Servicio</a>
+            </div>
+            <p class="mt-8 text-zinc-700 text-xs">&copy; 2026 FILO. Infraestructura Comercial.</p>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <a href="contacto.html"
+        class="fixed bottom-6 right-6 z-50 bg-white text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition border border-zinc-200">
+        <i class="fa-solid fa-message text-xl"></i>
+    </a>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

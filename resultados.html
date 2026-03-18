@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILO | Resultados Reales</title>
+    <!-- Tus enlaces a Tailwind, FontAwesome, Fuentes y tu CSS unificado -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#09090b] text-zinc-300 relative overflow-x-hidden selection:bg-indigo-500/30 selection:text-white">
+
+    <!-- Navbar -->
+    <!-- Marcando "Resultados" como activo (texto blanco) -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-bolt text-black text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">FILO</span>
+                </a>
+                <div class="hidden md:flex space-x-10 items-center text-sm font-medium">
+                    <a href="soluciones.html" class="text-zinc-400 hover:text-white transition">Soluciones</a>
+                    <a href="resultados.html" class="text-white font-semibold transition">Resultados</a>
+                    <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+                    <a href="preguntas.html" class="text-zinc-400 hover:text-white transition">FAQ</a>
+                    <a href="inversion.html" class="text-zinc-400 hover:text-white transition">Precios</a>
+                    <a href="contacto.html"
+                        class="bg-white text-black px-5 py-2.5 rounded-lg hover:bg-zinc-200 transition font-semibold">
+                        Agendar Diagnóstico
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#09090b] border-t border-zinc-800 p-4 absolute w-full z-50">
+            <a href="soluciones.html" class="block py-3 text-zinc-400 hover:text-white">Soluciones</a>
+            <a href="resultados.html" class="block py-3 text-white font-bold">Resultados</a>
+            <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+            <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+            <a href="inversion.html" class="block py-3 text-zinc-400 hover:text-white">Precios</a>
+            <a href="contacto.html" class="block mt-4 text-center bg-white text-black py-3 rounded-lg font-bold">Agendar
+                Diagnóstico</a>
+        </div>
+    </nav>
+
+    <!-- Results Section (Contenido copiado de tu index) -->
+    <!-- Se agrega pt-32 para dar espacio bajo el Navbar -->
+    <section id="cases" class="pt-32 pb-24 bg-[#09090b] relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="mb-16 text-center">
+                <span class="text-indigo-400 font-semibold tracking-wider uppercase text-xs">Casos de Éxito</span>
+                <h2 class="mt-4 text-3xl md:text-5xl font-bold text-white leading-tight">Resultados Reales con
+                    Inteligencia Artificial</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-[#121214] p-8 rounded-xl border border-zinc-800">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-white font-semibold">Restaurante <span
+                                class="text-zinc-500 font-normal block text-sm">Delivery</span></div>
+                        <i class="fa-solid fa-utensils text-zinc-600"></i>
+                    </div>
+                    <p class="text-zinc-400 text-sm italic mb-6">"Recuperé 25 horas a la semana. Antes cocinaba y
+                        chateaba. Ahora Sofía toma el pedido."</p>
+                    <div class="pt-4 border-t border-zinc-800 flex justify-between items-center text-sm">
+                        <span class="text-zinc-500">Ahorro</span>
+                        <span class="text-white font-bold">25h / semana</span>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-[#121214] p-8 rounded-xl border border-zinc-800">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-white font-semibold">Inmobiliaria <span
+                                class="text-zinc-500 font-normal block text-sm">Venta y Renta</span></div>
+                        <i class="fa-solid fa-house text-zinc-600"></i>
+                    </div>
+                    <p class="text-zinc-400 text-sm italic mb-6">"Filo duplicó mis visitas porque ahora nadie se queda
+                        sin respuesta inmediata."</p>
+                    <div class="pt-4 border-t border-zinc-800 flex justify-between items-center text-sm">
+                        <span class="text-zinc-500">Conversión</span>
+                        <span class="text-indigo-400 font-bold">+100% visitas</span>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-[#121214] p-8 rounded-xl border border-zinc-800">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="text-white font-semibold">E-commerce <span
+                                class="text-zinc-500 font-normal block text-sm">Retail</span></div>
+                        <i class="fa-solid fa-bag-shopping text-zinc-600"></i>
+                    </div>
+                    <p class="text-zinc-400 text-sm italic mb-6">"Reducción del 80% de preguntas repetitivas. Mi equipo
+                        ahora solo cierra ventas grandes."</p>
+                    <div class="pt-4 border-t border-zinc-800 flex justify-between items-center text-sm">
+                        <span class="text-zinc-500">Soporte</span>
+                        <span class="text-green-400 font-bold">-80% tickets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón extra para agendar demo -->
+            <div class="mt-20 text-center">
+                <a href="demo.html"
+                    class="px-8 py-4 rounded-xl font-semibold text-white border border-zinc-700 hover:bg-zinc-800 transition inline-flex items-center justify-center gap-2">
+                    Probar Demo del Sistema <i class="fa-solid fa-robot"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack (Grayscale) -->
+    <section class="py-16 bg-zinc-50 border-y border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-zinc-400 font-bold text-xs uppercase tracking-widest mb-8">Tecnología Enterprise</h3>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-brands fa-google"></i>
+                    Gemini</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-solid fa-cloud"></i>
+                    Google Cloud</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-solid fa-project-diagram"></i> n8n</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-brands fa-whatsapp"></i> WhatsApp API</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contacto"
+        class="py-24 bg-[#09090b] text-center px-6 relative overflow-hidden border-t border-zinc-900">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">¿Listo para soltar el control operativo?</h2>
+
+            <a href="contacto.html"
+                class="inline-block bg-white text-black px-10 py-4 rounded-xl font-bold text-lg hover:bg-zinc-200 transition mb-12">
+                Agendar Diagnóstico de 30 Minutos
+            </a>
+
+            <div class="flex justify-center gap-8 text-zinc-600 text-xs">
+                <a href="privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="terminos.html" class="hover:text-white transition">Términos de Servicio</a>
+            </div>
+            <p class="mt-8 text-zinc-700 text-xs">&copy; 2026 FILO. Infraestructura Comercial.</p>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <a href="demo.html"
+        class="fixed bottom-6 right-6 z-50 bg-white text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition border border-zinc-200">
+        <i class="fa-solid fa-message text-xl"></i>
+    </a>
+
+    <!-- Tu archivo JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

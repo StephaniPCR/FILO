@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILO | Infraestructura de Libertad</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#09090b] text-zinc-300 relative overflow-x-hidden selection:bg-indigo-500/30 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-bolt text-black text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">FILO</span>
+                </a>
+                <div class="hidden md:flex space-x-10 items-center text-sm font-medium">
+                    <a href="soluciones.html" class="text-zinc-400 hover:text-white transition">Soluciones</a>
+                    <a href="resultados.html" class="text-zinc-400 hover:text-white transition">Resultados</a>
+                    <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+                    <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+                    <a href="inversion.html" class="text-zinc-400 hover:text-white transition">Precios</a>
+                    <a href="contacto.html"
+                        class="bg-white text-black px-5 py-2.5 rounded-lg hover:bg-zinc-200 transition font-semibold">
+                        Agendar Diagnóstico
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#09090b] border-t border-zinc-800 p-4 absolute w-full">
+            <a href="soluciones.html" class="block py-3 text-zinc-400 hover:text-white">Soluciones</a>
+            <a href="resultados.html" class="block py-3 text-zinc-400 hover:text-white">Resultados</a>
+            <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+            <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+            <a href="inversion.html" class="block py-3 text-zinc-400 hover:text-white">Precios</a>
+            <a href="contacto.html" class="block mt-4 text-center bg-white text-black py-3 rounded-lg font-bold">Agendar
+                Diagnóstico</a>
+        </div>
+    </nav>
+
+    <!-- Interactive Demo -->
+    <section id="demo" class="py-24 bg-white text-zinc-900 border-t border-zinc-200">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div
+                        class="inline-block bg-indigo-50 text-indigo-600 font-semibold px-4 py-2 rounded-full text-sm mb-4">
+                        🌟 La Identidad
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">¿Qué es Sofía?</h2>
+                    <p class="text-lg text-zinc-600 mb-6 leading-relaxed">
+                        Sofía no es un simple programa de respuestas automáticas o un chatbot tradicional. Es una <span
+                            class="text-indigo-600 font-semibold">Asistente de Inteligencia Artificial con una identidad
+                            clara</span>: es "gocha", originaria de San Cristóbal, <a href="corazon.html"
+                            class="underline decoration-indigo-500/50 hover:text-indigo-400 transition cursor-pointer">Táchira</a>.
+                    </p>
+                    <p class="text-lg text-zinc-600 mb-8 leading-relaxed">
+                        Su propósito es ser una conversadora natural que utiliza la calidez y la educación para
+                        conectar con las personas antes de hablar de negocios. No presiona al cliente para venderle; su
+                        misión es <strong>"ayudarle a comprar"</strong> mediante la cordialidad y el interés genuino en
+                        su historia.
+                    </p>
+
+                    <div class="bg-zinc-50 border border-zinc-200 rounded-2xl p-6 shadow-sm">
+                        <h4 class="font-bold text-zinc-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-indigo-500"></i> Ponla a prueba
+                        </h4>
+                        <p class="text-sm text-zinc-500 mb-0">Interactúa con ella en el chat de la derecha y comprueba
+                            tú mismo su naturalidad al conversar.</p>
+                    </div>
+                </div>
+
+                <!-- Live Chat Demo -->
+                <div class="order-1 lg:order-2 bg-zinc-50 rounded-[2rem] p-2 shadow-2xl border border-zinc-200">
+                    <div class="bg-white rounded-[1.5rem] overflow-hidden flex flex-col h-[500px]">
+                        <!-- Header -->
+                        <div class="p-4 border-b border-zinc-100 flex justify-between items-center bg-white z-10">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                                    S</div>
+                                <div>
+                                    <p class="font-bold text-sm text-zinc-900">Sofía (Ventas)</p>
+                                    <p class="text-xs text-green-500 font-medium">● En línea</p>
+                                </div>
+                            </div>
+                            <button onclick="resetDemo()" class="text-zinc-400 hover:text-zinc-600 transition">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Body -->
+                        <div id="demo-chat-body" class="flex-1 bg-zinc-50 p-6 overflow-y-auto flex flex-col">
+                            <!-- JS content -->
+                        </div>
+
+                        <!-- Input -->
+                        <div class="p-4 bg-white border-t border-zinc-100">
+                            <div id="quick-replies" class="flex gap-2 mb-3 overflow-x-auto pb-2 scrollbar-hide"></div>
+                            <div class="flex gap-3">
+                                <div
+                                    class="flex-1 bg-zinc-100 rounded-full px-4 py-3 text-sm text-zinc-400 cursor-not-allowed">
+                                    Elige una opción...
+                                </div>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center shadow-md">
+                                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Ecosistema Filo -->
+    <section class="py-24 bg-[#09090b] text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 font-bold tracking-widest text-sm uppercase mb-3 block"> El Poder del
+                    Equipo</span>
+                <h2 class="text-4xl font-bold mb-6">El Ecosistema "Filo"</h2>
+                <p class="text-lg text-zinc-400">
+                    Sofía no trabaja sola; forma parte de un Sistema Operativo de IA diseñado para que las piezas de tu
+                    negocio encajen perfectamente. Detrás de la conversación, hay especialistas trabajando en la sombra:
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sofía -->
+                <div
+                    class="bg-[#121214] p-8 rounded-3xl border border-zinc-800 hover:border-indigo-500/50 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-500 text-2xl mb-6">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sofía <span
+                            class="text-sm text-zinc-500 block font-normal mt-1">Atención y Cualificación</span></h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Es la primera línea. La que escucha el "caos" del cliente, dialoga con naturalidad y detecta las
+                        fugas de tiempo antes de pasarlo a ventas.
+                    </p>
+                </div>
+                <!-- Ernesto -->
+                <div
+                    class="bg-[#121214] p-8 rounded-3xl border border-zinc-800 hover:border-emerald-500/50 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-500 text-2xl mb-6">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ernesto <span
+                            class="text-sm text-zinc-500 block font-normal mt-1">Gestor de Datos Técnicos</span></h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        La mente analítica. Procesa, organiza y guarda toda la información recopilada en tu CRM o bases
+                        de datos de forma estructurada (JSON).
+                    </p>
+                </div>
+                <!-- Marta -->
+                <div
+                    class="bg-[#121214] p-8 rounded-3xl border border-zinc-800 hover:border-orange-500/50 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 text-2xl mb-6">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Marta <span
+                            class="text-sm text-zinc-500 block font-normal mt-1">Soporte Técnico</span></h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Nuestra "bombera" digital. Interviene solo en situaciones urgentes o fallos técnicos para
+                        garantizar que el sistema nunca se detenga.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona (Magia en sencillo) -->
+    <section class="py-24 bg-white border-b border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-indigo-600 font-bold tracking-widest text-sm uppercase mb-3 block"> La Magia
+                        Técnica</span>
+                    <h2 class="text-4xl font-bold text-zinc-900 mb-6">¿Cómo funciona exactamente?</h2>
+                    <p class="text-lg text-zinc-600 mb-10">
+                        Un proceso diseñado para que detrás de cada solución, sientas la empatía y capacidad de una
+                        persona real. humano capaz de llevar una atención al cliente.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-lg shrink-0">
+                                1</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-zinc-900 mb-2">Diagnóstico Automatizado</h4>
+                                <p class="text-zinc-600">Realiza preguntas estratégicas y empáticas para identificar
+                                    tareas repetitivas reales que roban energía a tu empresa.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-lg shrink-0">
+                                2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-zinc-900 mb-2">Filo Client Card</h4>
+                                <p class="text-zinc-600">Al finalizar, genera una ficha visual que resume la visión y el
+                                    reto principal del prospecto, validando inmediatamente sus requerimientos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center font-bold text-lg shrink-0">
+                                3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-zinc-900 mb-2">Memoria Relacional</h4>
+                                <p class="text-zinc-600">Capaz de recordar detalles específicos (hobbies, dolores
+                                    pasados, tipo de negocio) creando una experiencia 100% personalizada en cada futuro
+                                    contacto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-indigo-100 to-transparent rounded-[3rem] blur-3xl opacity-50">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                        alt="Dashboard conceptual"
+                        class="relative rounded-[2rem] shadow-2xl border border-zinc-200 z-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo ayuda a las empresas (Valor Real) -->
+    <section class="py-24 bg-zinc-50 border-b border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold tracking-widest text-sm uppercase mb-3 block"> El Valor
+                    Real</span>
+                <h2 class="text-4xl font-bold text-zinc-900 mb-6">¿Cómo ayuda a las empresas?</h2>
+                <p class="text-lg text-zinc-600">
+                    Diseñado bajo la <strong>Ecuación de Valor</strong>, enfocado en maximizar los resultados y
+                    ganancias mientras se minimiza radicalmente el esfuerzo del dueño.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white p-8 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                        <i class="fa-solid fa-hourglass-half text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-900 mb-3">Recuperación de Tiempo</h3>
+                    <p class="text-zinc-600">Automatiza todo lo aburrido y repetitivo (precios, horarios, dudas). Tu
+                        equipo humano vuelve a enfocarse en lo que de verdad importa: la estrategia y el servicio de
+                        alto valor.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                        <i class="fa-solid fa-filter-circle-dollar text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-900 mb-3">Cualificación de Leads</h3>
+                    <p class="text-zinc-600">Sofía filtra a los curiosos, a los "hackers" de información gratuita, y le
+                        entrega a tu equipo comercial únicamente clientes que están listos para una reunión de cierre.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                        <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-900 mb-3">Atención 24/7 sin fatiga</h3>
+                    <p class="text-zinc-600">El negocio no se detiene nunca. Se atiende a los clientes potenciales con
+                        la misma cortesía, empatía y exactitud a las 3:00 PM que a las 3:00 AM.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                        <i class="fa-solid fa-folder-tree text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-900 mb-3">Orden Radical (Datos limpios)</h3>
+                    <p class="text-zinc-600">Convierte simples conversaciones informales de WhatsApp en activos de datos
+                        tabulados y estructurados. Cero error humano por copiar y pegar manualmente en el CRM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack (Grayscale) -->
+    <section class="py-16 bg-zinc-50 border-y border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-zinc-400 font-bold text-xs uppercase tracking-widest mb-8">Tecnología Enterprise</h3>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-brands fa-google"></i>
+                    Gemini</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-solid fa-cloud"></i>
+                    Google Cloud</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-solid fa-project-diagram"></i> n8n</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-brands fa-whatsapp"></i> WhatsApp API</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contacto" class="py-24 bg-[#09090b] text-center px-6 relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">¿Listo para soltar el control operativo?</h2>
+
+            <a href="contacto.html"
+                class="inline-block bg-white text-black px-10 py-4 rounded-xl font-bold text-lg hover:bg-zinc-200 transition mb-12">
+                Agendar Diagnóstico de 30 Minutos
+            </a>
+
+            <div class="flex justify-center gap-8 text-zinc-600 text-xs">
+                <a href="privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="terminos.html" class="hover:text-white transition">Términos de Servicio</a>
+            </div>
+            <p class="mt-8 text-zinc-700 text-xs">&copy; 2026 FILO. Infraestructura Comercial.</p>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <a href="contacto.html"
+        class="fixed bottom-6 right-6 z-50 bg-white text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition border border-zinc-200">
+        <i class="fa-solid fa-message text-xl"></i>
+    </a>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

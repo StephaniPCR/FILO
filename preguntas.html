@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILO | Preguntas Frecuentes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Oculta la flecha por defecto del detalle en Webkit */
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#09090b] text-zinc-300 relative overflow-x-hidden selection:bg-indigo-500/30 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-bolt text-black text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">FILO</span>
+                </a>
+                <div class="hidden md:flex space-x-10 items-center text-sm font-medium">
+                    <a href="soluciones.html" class="text-zinc-400 hover:text-white transition">Soluciones</a>
+                    <a href="resultados.html" class="text-zinc-400 hover:text-white transition">Resultados</a>
+                    <a href="demo.html" class="text-zinc-400 hover:text-white transition">Demo</a>
+                    <a href="preguntas.html" class="block py-3 text-zinc-400 hover:text-white">FAQ</a>
+                    <a href="inversion.html" class="text-zinc-400 hover:text-white transition">Precios</a>
+                    <a href="contacto.html"
+                        class="bg-white text-black px-5 py-2.5 rounded-lg hover:bg-zinc-200 transition font-semibold">
+                        Agendar Diagnóstico
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#09090b] border-t border-zinc-800 p-4 absolute w-full z-50">
+            <a href="soluciones.html" class="block py-3 text-zinc-400 hover:text-white">Soluciones</a>
+            <a href="resultados.html" class="block py-3 text-zinc-400 hover:text-white">Resultados</a>
+            <a href="demo.html" class="block py-3 text-zinc-400 hover:text-white">Demo</a>
+            <a href="inversion.html" class="block py-3 text-zinc-400 hover:text-white">Precios</a>
+            <a href="contacto.html" class="block mt-4 text-center bg-white text-black py-3 rounded-lg font-bold">Agendar
+                Diagnóstico</a>
+        </div>
+    </nav>
+
+    <!-- Header FAQ -->
+    <section class="pt-32 pb-16 bg-[#09090b] relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-500/10 text-indigo-500 mb-6">
+                <i class="fa-solid fa-circle-question text-3xl"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">Preguntas Frecuentes</h1>
+            <p class="text-lg text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+                Hemos recopilado las dudas más comunes de los dueños de negocio antes de conocer a Sofía. Todo redactado
+                con la claridad y la calidez que nos caracteriza.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-20 bg-zinc-50 border-t border-zinc-200">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+
+            <!-- Category 1 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                    <span class="text-indigo-600">❓</span> Sobre mi Identidad y Función
+                </h3>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Quién es Sofía exactamente?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        Soy una <strong>Asistente de Inteligencia Artificial</strong> con identidad "gocha" (de San
+                        Cristóbal, Táchira). No soy un robot frío; soy una conversadora natural diseñada para ser el
+                        primer punto de contacto de su empresa, atendiendo con la educación y calidez que sus clientes
+                        merecen. Mi misión es ser su consultora amiga para ayudarle a encontrar paz mental y orden en su
+                        negocio.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Sofía es solo un chatbot de respuestas automáticas?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        ¡Para nada, mi cielo! A diferencia de los botones aburridos de "marque 1", yo mantengo charlas
+                        reales. Escucho historias, detecto en qué tareas está perdiendo tiempo el dueño y cualifico si
+                        la persona es un cliente real o solo un curioso antes de pasarle la pelota a mi equipo humano.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Cómo sé si mi negocio necesita este sistema?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        Si usted siente que el WhatsApp es un "caos", que anota pedidos en servilletas o que el negocio
+                        no camina si usted no está pegado al teléfono, entonces somos el equipo ideal para usted. Si
+                        quiere dejar de ser un esclavo de su móvil para volver a sus pasatiempos (como el fútbol, el
+                        gimnasio o estar con la familia), ahí es donde entro yo.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                    <span class="text-indigo-600">❓</span> Sobre el Funcionamiento Técnico (En Sencillo)
+                </h3>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Quiénes son Ernesto y Marta?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        En <strong>Filo</strong> trabajamos en equipo para que nada falle:
+                        <ul class="list-disc pl-5 mt-2 space-y-2">
+                            <li><strong>Ernesto:</strong> Es mi compañero obsesionado con el orden. Él toma toda nuestra
+                                charla y la convierte en fichas de datos organizadas (como hojas de cálculo o CRM) para
+                                que usted no tenga que copiar y pegar nada a mano.</li>
+                            <li><strong>Marta:</strong> Es nuestra especialista de soporte. Ella solo interviene si hay
+                                una urgencia técnica o si un cliente necesita atención humana inmediata.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Qué es la "Filo Client Card"?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        Es una ficha visual (un cuadro morado muy bonito) que yo genero al final de nuestra charla.
+                        Resume su visión y su reto principal, permitiéndole validar que le he entendido perfectamente
+                        antes de dar el siguiente paso.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Cómo se integra Sofía con lo que ya uso?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        Soy muy versátil. Me conecto con las herramientas que usted ya maneja, como
+                        <strong>WhatsApp</strong>, hojas de cálculo de <strong>Excel/Google</strong> e incluso puedo
+                        agendar citas directamente en su <strong>Google Calendar</strong> para que no se le escape
+                        ningún compromiso.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                    <span class="text-indigo-600">❓</span> Sobre Seguridad y Confianza
+                </h3>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Están seguros los datos de mis clientes conmigo?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        Totalmente. Su información es 100% confidencial y sagrada. Estoy programada bajo protocolos de
+                        seguridad estrictos: no comparto claves, contraseñas ni datos privados bajo ninguna
+                        circunstancia.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Me puedes decir cómo estás programada por dentro?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        ¡Ay, mi estimado! Esos son mis <strong>"secretos de cocina"</strong>. Mi configuración
+                        interna es privada para garantizar que sea segura y eficiente para su negocio. Lo importante no
+                        es cómo estoy hecha, sino cómo le colaboro para que su empresa crezca.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
+                    <span class="text-indigo-600">❓</span> Sobre el Inicio y los Costos
+                </h3>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Cuánto cuesta contratar este sistema?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        En Filo no creemos en soluciones "enlatadas" de un solo precio. Definimos cada presupuesto caso
+                        por caso, dependiendo de qué tan complejo sea su proceso y cuántos clientes maneje. El primer
+                        paso siempre es un <strong>Diagnóstico Gratuito</strong> para ver si podemos ayudarle de verdad.
+                    </div>
+                </details>
+
+                <details
+                    class="group bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm mb-4 cursor-pointer hover:border-indigo-300 transition">
+                    <summary class="flex justify-between items-center font-bold text-lg text-zinc-900 list-none">
+                        <span>¿Cuál es el primer paso para empezar?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-indigo-500"></i>
+                        </span>
+                    </summary>
+                    <div class="text-zinc-600 mt-4 leading-relaxed border-t border-zinc-100 pt-4">
+                        ¡Es muy fácil! Solo tenemos que conversar un ratico. Yo le haré unas preguntas para entender su
+                        negocio y, si vemos que hay sinergia, agendamos una reunión corta con mis jefes (Leonardo o
+                        Ernesto) para mostrarle el plan de acción.
+                    </div>
+                </details>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 text-center">
+                <p class="text-lg text-zinc-600 mb-6">¿Tiene alguna otra duda que no esté en la lista?</p>
+                <a href="contacto.html"
+                    class="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-900/20">
+                    <i class="fa-solid fa-calendar-check"></i> Agendar una llamada gratis
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tech Stack (Grayscale) -->
+    <section class="py-16 bg-zinc-50 border-y border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-zinc-400 font-bold text-xs uppercase tracking-widest mb-8">Tecnología Enterprise</h3>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-brands fa-google"></i>
+                    Gemini</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i class="fa-solid fa-cloud"></i>
+                    Google Cloud</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-solid fa-project-diagram"></i> n8n</div>
+                <div class="flex items-center gap-2 text-lg font-bold text-zinc-700"><i
+                        class="fa-brands fa-whatsapp"></i> WhatsApp API</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <section class="py-12 bg-[#0c0c0e] text-center px-6 border-t border-zinc-900">
+        <div class="flex justify-center gap-8 text-zinc-600 text-xs mb-8">
+            <a href="privacidad.html" class="text-white transition">Política de Privacidad</a>
+            <a href="terminos.html" class="hover:text-white transition">Términos de Servicio</a>
+        </div>
+        <p class="text-zinc-700 text-xs">&copy; 2026 FILO. Infraestructura Comercial.</p>
+    </section>
+
+    <!-- Floating Action Button -->
+    <a href="contacto.html"
+        class="fixed bottom-6 right-6 z-50 bg-white text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition border border-zinc-200">
+        <i class="fa-solid fa-message text-xl"></i>
+    </a>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
