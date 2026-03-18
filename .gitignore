@@ -1,0 +1,42 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependencies (just en caso de que alguna vez se use npm/yarn)
+node_modules/
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories (Visual Studio Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Variables de Entorno (Secretos)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Caches
+.eslintcache
+.stylelintcache
+
+# Archivos temporales
+*.tmp
+*.bak
+*~
